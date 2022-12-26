@@ -9,6 +9,10 @@ function App() {
     console.log("only dependency1", dependency1, dependency2);
   }, [dependency1]);
 
+  useEffect(() => {
+    console.log("dependency1 and dependency2", dependency1, dependency2);
+  }, [dependency1, dependency2]);
+
   return (
     <div className="App">
       <button
